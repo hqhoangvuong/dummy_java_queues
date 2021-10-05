@@ -42,7 +42,7 @@ public final class ArrayQueue<T> implements QueueInterface<T> {
     public T getFront() throws Exception {
         checkIntegrity();
         if (isEmpty()) {
-            throw new Exception("LoL");
+            throw new Exception("Nothing to peak here!");
         } else {
             return queue[frontIndex];
         }
@@ -51,7 +51,7 @@ public final class ArrayQueue<T> implements QueueInterface<T> {
     public T dequeue() throws Exception {
         checkIntegrity();
         if (isEmpty()) {
-            throw new Exception("LoL");
+            throw new Exception("Nothing left to poop!");
         } else {
             T front = queue[frontIndex];
             queue[frontIndex] = null;

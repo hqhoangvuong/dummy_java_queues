@@ -13,11 +13,11 @@ public class App
         }
 
         firstQueue.splice(secondQueue);
+        
 
+        System.out.println("Spliced queue will look like: ");
         while(!firstQueue.isEmpty()) {  
-            System.out.println(firstQueue.dequeue());
+            System.out.print(Integer.toString(firstQueue.dequeue()) + " ");
         }
-
-        System.out.println( "Hello World!" );
     }
 }
